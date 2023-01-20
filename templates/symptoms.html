@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style_symptoms.css') }}">
+</head>
+<body>
+    <div class="container">
+    <div class="bg_box1"></div>
+    <div class="heading">
+        <h5 class="head">Choose your symptoms</h5>
+    </div>
+    <div class="input">
+        <form action="/symptoms" method="POST">
+            <div id="symptom_inputs"></div>
+            <div class="body">
+                <h5 class="text">BODY</h5>
+                <div class="input_butt" id="Body">
+                    <input class="butt" type="button" value="Weight Gain" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Weight Loss" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Congetion" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Chills" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Weakness" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Shivering" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="High Fever" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Sweating" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Dehydration" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Fatigue" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Loss Of Appetite" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Itchy" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="White Patches" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Ring Shaped Rash" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Foot Rash" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                </div>
+            </div>
+            <div class="body">
+                <h5 class="text">Muscle</h5>
+                <div class="input_butt" id="Muscle">
+                    <input class="butt" type="button" value="Joint Pain" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Back Pain" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Muscle Pain" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Chills" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Muscle Weakness" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Swollen lymph onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);"">
+                    <input class="butt" type="button" value="Neck Swollen" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    
+                </div>
+            </div>
+
+            <div class="body">
+                <h5 class="text">Face</h5>
+                <div class="input_butt", id="Face">
+                    <input class="butt" type="button" value="Pus Filled Pimples" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Red Sores" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Sneezing" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Loss of smell" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Skin rash" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Stuffed nose" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Dry skin" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Blisters" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    
+                </div>
+            </div>
+
+            <div class="body">
+                <h5 class="text">Urination</h5>
+                <div class="input_butt", id="Urination">
+                    <input class="butt" type="button" value="Dark Urine" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Yellow Urine" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <!-- <input class="butt" id="" type="button" value="Foul Smell of Urine"> -->
+                </div>
+            </div>
+
+            <div class="body">
+                <h5 class="text">Chest</h5>
+                <div class="input_butt" name="Chest">
+                    <input class="butt" type="button" value="Cough" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Blood In Cough" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Vomiting" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Phlegm" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Sore Throat" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Low Oxygen Level" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Neck Swollen" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    
+                </div>
+            </div>
+
+            <div class="body">
+                <h5 class="text">Eyes</h5>
+                <div class="input_butt" id="Eyes">
+                    <input class="butt" type="button" value="Water in Eyes" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Puffy Face" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Pain Behind The Eyes" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Yellowing Of Eyes" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Redness Of Eyes" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Low Oxygen Level" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    <input class="butt" type="button" value="Neck Swollen" onclick = "add_symptom(this.parentNode.id, this.value); highlight(this);">
+                    
+                </div>
+            </div>
+
+            <br><br>
+
+            <input class="butt" type="submit">
+
+        </form>
+    </div>
+</div>
+
+<script>
+    function add_symptom(name, value){
+        var inputs = document.getElementById("symptom_inputs").getElementsByTagName('input');
+        for (let index = 0; index < inputs.length; index++) {
+            if (inputs[index].name === name) {
+                inputs[index].value = inputs[index].value + "," + value;
+                return;
+            }
+        }
+
+        function highlight(btn){
+            btn.style.backgroundColor = 'Red';
+        }
+
+        var input = document.createElement("input");
+        input.setAttribute("type", "hidden");
+        input.setAttribute("name", name);
+        input.setAttribute("value", value);
+        document.getElementById("symptom_inputs").appendChild(input);
+    }
+</script>
+</body>
+</html>

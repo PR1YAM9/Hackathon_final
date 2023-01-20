@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style_signup.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="top_circle"></div>
+        <div class="bottom_circle"></div>
+        <div class="bg_box"></div>
+        <div class="sign_up"><h2 class="snup">SIGN UP</h2></div>
+        <div class="input">
+            <div class="start">
+                <form method="POST" action="/signup">
+                    <!-- name -->
+                    <div class="name_I">
+
+                        <div class="na"><h5 class="name">NAME</h5></div>
+                        <input type="text" name="name" id="name1">
+
+                    </div>
+                    <!-- !name -->
+
+                    <!-- email -->
+                    <div class="email_I">
+                        <div class="em"><h5 class="ema">EMAIL</h5></div>
+
+                        <input type="email" name="email" id="email1">
+
+                    </div>
+                    <!-- !email -->
+
+                    <!-- Password -->
+                    <div class="password_I">
+                        <div class="pa"><h5 class="pass">PASSWORD</h5></div>
+                    
+                            <input type="password" name="password" id="pass1">
+                    
+                    </div>
+
+                        <button class="enter" type="submit">SIGN UP</button>
+                </form>
+            <div class="or1">
+                <div class="line1"></div>
+                <div class="or"><h5 class="ore">OR</h5></div>
+                <div class="line2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

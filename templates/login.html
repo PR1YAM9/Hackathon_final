@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style_login.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="bg_box1"></div>
+        <div class="log_in"><h2 class="lgin">LOGIN</h2></div>
+            
+        <div class="input">
+            <form method="POST" action="/login">
+                <div class="em"><h5 class="ema">EMAIL</h5></div>
+                <input type="email" name="email" id="email1">
+
+
+                <div class="pass"><h5 class="pa">PASSWORD</h5></div>
+                <input type="password" name="password" id="pass1">
+
+                <button class="btn" type="submit">LOGIN</button>
+                
+            </form>
+        </div>    
+        
+        <div class="top_circle"></div>
+        <div class="bottom_circle"></div>
+        <!-- <div class="mid_right"></div> -->
+        <div class="mid_sghi"></div>
+
+
+    </div>
+</body>
+</html>

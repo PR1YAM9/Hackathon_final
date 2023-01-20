@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href ="dist/output.css" rel = "stylesheet" />
+    <title>symptoms</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style_symptoms.css') }}">
+</head>
+<body>
+     <!-------------------------------------------Navbar------------------------------------------------->
+
+     <nav class="nav flex mx-32 my-2 items-center justify-between">
+        <div class="left flex items-center space-x-2 m-2">
+            <img src="../Images/Logo.png" alt="logo">
+            <div class="hover:border hover:px-2 px-2 hover:border-white hover:rounded-full hover:scale-105 hover:bg-yellow-200"> <button><a href="/about">About</a></button></div>  
+            <a  href="#service1"></a><div class="hover:border hover:px-2 px-2 hover:border-white hover:rounded-full hover:bg-yellow-200">Monitor</div>
+            <div class="hover:border hover:px-2 px-2 hover:border-white hover:rounded-full hover:scale-105  hover:bg-yellow-200" onclick="location.href='/symptoms'">Detect</div>
+            <div class="hover:border hover:px-2 px-2 hover:border-white hover:rounded-full hover:scale-105  hover:bg-yellow-200">Hotspots</div>
+            <!-- <div class="hover:border hover:px-2 px-2 hover:border-white hover:rounded-full hover:scale-105  hover:bg-yellow-200">Contacts</div> -->
+        </div>
+        <div class="right space-x-4 m-2 flex items-center">
+            <div class="border-2 px-2 bg-slate-200 border-white rounded-full hover:cursor-pointer hover:bg-slate-300 bg-transparent" onclick="location.href='/login'">Login</div>
+            <div class="px-2 border-white border bg-gradient-to-r from-blue-600 to bg-cyan-500 rounded-full hover:bg-gradient-to-r hover:from-blue-700 hover:to-cyan-600 hover:cursor-pointer" onclick="location.href='/signup'">Sign-Up</div>
+        </div>
+    </nav>
+</header>
+
+                                    <!--  -->
+    <div class="container">
+    <div class="bg_box1"></div>
+    <div class="heading">
+        <h5 class="head">Choose your symptoms</h5>
+    </div>
+    <div class="input">
+        <form action="">
+            <div class="body">
+                <h5 class="text">Body</h5>
+                <div class="input_butt">
+                    <input class="butt" id="Weight Gain" name="Weight Gain" type="checkbox" value="Weight Gain"><label class="ohm">Weigth Gain</label> 
+
+                    <input class="butt" id="Weight Loss" name="Weight Loss" type="checkbox" value="Weight Loss"><label class="ohm" for="Weight Loss">Weight Loss</label>
+                    <input class="butt" id="Congetion" name="Congetion" type="checkbox" value="Congetion"> <label class="ohm" for="Congetion">Congetion</label>
+                    <input class="butt" id="Chills" name="Chills" type="checkbox" value="Chills"><label class="ohm" for="Chills">Chills</label>
+                    <input class="butt" id="Weakness" name="Weakness" type="checkbox" value="Weakness"><label class="ohm" for="Weakness">Weakness</label>
+                    <input class="butt" id="Shivering" name="Shivering" type="checkbox" value="Shivering"><label class="ohm" for="Shivering">Shivering</label>
+                    <input class="butt" id="High Fever" name="High Fever" type="checkbox" value="High Fever"><label class="ohm" for="High Fever">High Fever</label>
+                    <input class="butt" id="Sweating" name="Sweating" type="checkbox" value="Sweating"><label class="ohm" for="Sweating">Sweating</label>
+                    <input class="butt" id="Dehydration" name="Dehydration" type="checkbox" value="Dehydration"><label class="ohm" for="Dehydration">Dehydration</label>
+                    <input class="butt" id="Fatigue" name="Fatigue" type="checkbox" value="Fatigue"><label class="ohm" for="Fatigue">Fatigue</label>
+                    <input class="butt" id="Loss Of Appetite" name="Loss Of Appetite" type="checkbox" value="Loss Of Appetite"><label class="ohm" for="Loss of Appetite">Loss of Appetite</label>
+                    <input class="butt" id="Itchy" name="Itchy" type="checkbox" value="Itchy"><label class="ohm" for="Itchy">Itchy</label>
+                    <input class="butt" id="hite Patches" name="White Patches" type="checkbox" value="White Patches"><label class="ohm" for="White Patches">White Patches</label>
+                    <input class="butt" id="Ring Shaped Rash" name="Ring Shaped Rash" type="checkbox" value="Ring Shaped Rash"><label class="ohm" for="Ring Shaped Rash">Ring Shaped Rash</label>
+                    <input class="butt" id="Foot Rash" name="Foot Rash" type="checkbox" value="Foot Rash"><label class="ohm" for="Foot Rash">Foot Rash</label>
+                </div>
+            </div>
+            <div class="body">
+                <h5 class="text">Muscle</h5>
+                <div class="input_butt">
+                    <input class="butt" id="Joint Pain" name="Joint Pain" type="checkbox" value="Joint Pain"><label class="ohm" for="Joint Pain">Joint Pain</label>
+                    <input class="butt" id="Back Pain" name="Back Pain" type="checkbox" value="Back Pain"><label class="ohm" for="Back Pain">Back Pain</label>
+                    <input class="butt" id="Muscle Pain" name="Muscle Pain" type="checkbox" value="Muscle Pain"><label class="ohm" for="Muscle Pain">Muscle Pain</label>
+                    <input class="butt" id="Chills" name="Chills" type="checkbox" value="Chills"><label class="ohm" for="Chills">Chills</label>
+                    <input class="butt" id="Muscle Weakness" name="Muscle Weakness" type="checkbox" value="Muscle Weakness"><label class="ohm" for="Muscle Weakness">Muscle Weakness</label>
+                    <input class="butt" id="Swollen lymph" name="Swollen lymph" type="checkbox" value="Swollen lymph"><label class="ohm" for="Swollen lymph">Swollen lymph</label>
+                    <input class="butt" id="Neck Swollen" name="Neck Swollen" type="checkbox" value="Neck Swollen"><label class="ohm" for="Neck Swollen">Neck Swollen</label>
+                    
+                </div>
+            </div>
+
+            <div class="body">
+                <h5 class="text">Face</h5>
+                <div class="input_butt">
+                    <input class="butt" id="Foot Rash" name="Pus Filled Pimples" type="checkbox" value="Pus Filled Pimples"><label class="ohm" for="Pus Filled Pimples">Pus Filled Pimples</label>
+                    <input class="butt" id="Red Sores" name="Red Sores" type="checkbox" value="Red Sores"><label class="ohm" for="Red Sores">Red Sores</label>
+                    <input class="butt" id="Sneezing" name="Sneezing" type="checkbox" value="Sneezing"><label class="ohm" for="Sneezing">Sneezing</label>
+                    <input class="butt" id="Loss of smell" name="Loss of smell" type="checkbox" value="Loss of smell"><label class="ohm" for="Loss of smell">Loss of smell</label>
+                    <input class="butt" id="Skin rash" name="Skin rash" type="checkbox" value="Skin rash"><label class="ohm" for="Skin rash">Skin rash</label>
+                    <input class="butt" id="Stuffed nose" name="Stuffed nose" type="checkbox" value="Stuffed nose"><label class="ohm" for="Stuffed nose">Stuffed nose</label>
+                    <input class="butt" id="Dry skin" name="Dry skin" type="checkbox" value="Dry skin"><label class="ohm" for="Dry skin">Dry skin</label>
+                    <input class="butt" id="Blisters" name="Blisters" type="checkbox" value="Blisters"><label class="ohm" for="Blisters">Blisters</label>
+                    
+                </div>
+            </div>
+
+            <div class="body">
+                <h5 class="text">Urination</h5>
+                <div class="input_butt">
+                    <input class="butt" id="Dark Urine" name="Dark Urine" type="checkbox" value="Dark Urine"><label class="ohm" for="Dark Urine">Dark Urine</label>
+                    <input class="butt" id="Yellow Urine" name="Yellow Urine" type="checkbox" value="Yellow Urine"><label class="ohm" for="Yellow Urine">Yellow Urine</label>
+                    <!-- <input class="butt" id="" type="button" value="Foul Smell of Urine"> -->
+                </div>
+            </div>
+
+            <div class="body">
+                <h5 class="text">Chest</h5>
+                <div class="input_butt">
+                    <input class="butt" id="Cough" name="Cough" type="checkbox" value="Cough"><label class="ohm" for="Cough">Cough</label>
+                    <input class="butt" id="Blood In Cough" name="Blood In Cough" type="checkbox" value="Blood In Cough"><label class="ohm" for="Blood In Cough">Blood In Cough</label>
+                    <input class="butt" id="Vomiting" name="Vomiting" type="checkbox" value="Vomiting"><label class="ohm" for="Vomiting">Vomiting</label>
+                    <input class="butt" id="Phlegm" name="Phlegm" type="checkbox" value="Phlegm"><label class="ohm" for="Phlegm">Phlegm</label>
+                    <input class="butt" id="Sore Throat" name="Sore Throat" type="checkbox" value="Sore Throat"><label class="ohm" for="Sore Throat">Sore Throat</label>
+                    <input class="butt" id="Low Oxygen Level" name="Low Oxygen Level" type="checkbox" value="Low Oxygen Level"><label class="ohm" for="Low Oxygen Level">Low Oxygen Level</label>
+                    <input class="butt" id="Neck Swollen" name="Neck Swollen" type="checkbox" value="Neck Swollen"><label class="ohm" for="Neck Swollen">Neck Swollen</label>
+                    
+                </div>
+            </div>
+
+            <div class="body">
+                <h5 class="text">Eyes</h5>
+                <div class="input_butt">
+                    <input class="butt" id="Water in Eyes" name="Water in Eyes" type="checkbox" value="Water in Eyes"><label class="ohm" for="Water in Eyes">Water in Eyes</label>
+                    <input class="butt" id="Puffy Face" name="Puffy Face" type="checkbox" value="Puffy Face"><label class="ohm" for="Water in Eyes">Water in Eyes</label>
+                    <input class="butt" id="Pain Behind The Eyes" name="Pain Behind The Eyes" type="checkbox" value="Pain Behind The Eyes"><label class="ohm" for="Pain Behind The Eyes">Pain Behind The Eyes</label>
+                    <input class="butt" id="Yellowing Of Eyes" name="Yellowing Of Eyes" type="checkbox" value="Yellowing Of Eyes"><label class="ohm" for="Yellowing Of Eyes">Yellowing Of Eyes</label>
+                    <input class="butt" id="Redness Of Eyes" name="Redness Of Eyes" type="checkbox" value="Redness Of Eyes"><label class="ohm" for="Redness Of Eyes">Redness Of Eyes</label>
+                    
+                </div>
+            </div>
+
+            <button type="submit"> SUBMIT QUERY </button>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

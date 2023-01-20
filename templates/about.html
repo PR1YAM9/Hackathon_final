@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style_about.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href ="dist/output.css" rel = "stylesheet" />
+</head>
+<body>
+
+    <nav class=" nav flex mx-32 my-2 items-center justify-between">
+        <div class="left flex items-center space-x-2 m-2">
+            <img src="../Images/Logo.png" alt="logo">
+            <div class="hover:border hover:px-2 px-2 hover:border-white hover:rounded-full hover:scale-105 hover:bg-yellow-200"> <button><a href="../about/about.html">About</a></button></div>  
+            <a  href="#service1"></a><div class="hover:border hover:px-2 px-2 hover:border-white hover:rounded-full hover:bg-yellow-200">Monitor</div>
+            <div class="hover:border hover:px-2 px-2 hover:border-white hover:rounded-full hover:scale-105  hover:bg-yellow-200">Detect</div>
+            <div class="hover:border hover:px-2 px-2 hover:border-white hover:rounded-full hover:scale-105  hover:bg-yellow-200">Hotspots</div>
+            <!-- <div class="hover:border hover:px-2 px-2 hover:border-white hover:rounded-full hover:scale-105  hover:bg-yellow-200">Contacts</div> -->
+        </div>
+        <div class="right space-x-4 m-2 flex items-center">
+            <div class="border-2 px-2 bg-slate-200 border-white rounded-full hover:cursor-pointer hover:bg-slate-300 bg-transparent">Login</div>
+            <div class="px-2 border-white border bg-gradient-to-r from-blue-600 to bg-cyan-500 rounded-full hover:bg-gradient-to-r hover:from-blue-700 hover:to-cyan-600 hover:cursor-pointer">Sign-Up</div>
+        </div>
+    </nav>
+</header>
+
+
+    <div class="container">
+        <div class="outer_circle"></div>
+        <div class="inner_cicle"></div>
+        <div class="about_H">
+                <h2 class="heading">ABOUT US</h2>           
+        </div>
+        <div class="text">
+            <div class="t1">
+                <p>Welcome to <span class="up">HealthUp</span>, your ultimate health companion. We are a team of health and technology experts who believe in the power of proactive health management. Our state-of-the-art technology monitors your symptoms and predicts potential diseases based on environmental factors and disease hotspots near you.</p>
+            </div>
+            <div class="t2">
+                <p>Our mission is to empower individuals with the tools and information they need to proactively manage their health. We understand the importance of staying informed about potential health risks and believe that by providing our users with the latest technology, we can help them take control of their well-being.</p>
+            </div>
+            <div class="t3">
+                <p>Our website is user-friendly and easy to navigate, allowing you to monitor your symptoms, stay informed about disease hotspots near you, and predict potential health risks with just a few clicks. We also offer a variety of health resources and articles to help educate and inform our users.</p>
+            </div>
+            <div class="t4"><p>We pride ourselves on providing accurate, up-to-date information and constantly update our database to ensure that our users have access to the most current information. We are committed to protecting user privacy and take the necessary measures to keep user data safe and secure.
+                Thank you for choosing HealthUp as your health companion. We look forward to helping you take control of your well-being.</p></div>
+        </div>
+    </div>
+</body>
+</html>
